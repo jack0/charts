@@ -104,7 +104,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: "storageos-{{ .name }}-cleanup"
-  namespace: {{ .Release.Namespace }}
+  namespace: {{ .namespace }}
   annotations:
     "helm.sh/hook": post-delete
     "helm.sh/hook-delete-policy": "hook-succeeded, before-hook-creation"
