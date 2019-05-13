@@ -94,7 +94,7 @@ questions:
   - variable: cluster.disableTelemetry
     default: false
     type: boolean
-    description: "Disable telemetry to be collected from the cluster."
+    description: "Disable telemetry data collection.  See https://docs.storageos.com/docs/reference/telemetry for more information."
     label: Disable Telemetry
 
   # KV store backend.
