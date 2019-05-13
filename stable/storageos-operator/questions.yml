@@ -127,8 +127,8 @@ questions:
   # Node Selector Term.
   - variable: cluster.nodeSelectorTerm.key
     required: false
-    default: "node-role.kubernetes.io/worker"
-    description: "Key of the node selector term match expression used to select the nodes to install StorageOS on."
+    default: ""
+    description: "Key of the node selector term match expression used to select the nodes to install StorageOS on, e.g. `node-role.kubernetes.io/worker`"
     type: string
     label: Node selector term key
   - variable: cluster.nodeSelectorTerm.value
